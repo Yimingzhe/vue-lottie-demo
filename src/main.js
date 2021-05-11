@@ -3,6 +3,12 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
+import lottie from 'vue-lottie'
+import * as LottiePlayer from '@lottiefiles/lottie-player'
+
+Vue.use(LottiePlayer)
+Vue.component('lottie', lottie)
+
 Vue.config.productionTip = false
 
 new Vue({
